@@ -22,6 +22,14 @@ const mumbai = {
   rpcUrl: "https://polygon-mumbai-bor.publicnode.com",
 };
 
+const sepolia = {
+  chainId: 11155111,
+  name: "eth-sepolia",
+  currency: "MATIC",
+  explorerUrl: "	",
+  rpcUrl: "https://1rpc.io/sepolia",
+};
+
 // 3. Create modal
 const metadata = {
   name: "My Website",
@@ -32,7 +40,7 @@ const metadata = {
 
 createWeb3Modal({
   ethersConfig: defaultConfig({ metadata }),
-  chains: [mainnet, mumbai],
+  chains: [mainnet, mumbai, sepolia],
   projectId,
   enableAnalytics: true, // Optional - defaults to your Cloud configuration
 });
