@@ -23,7 +23,6 @@ export async function quote(signer, ethersProvider, tokenIn, tokenOut, amount) {
     );
 
   console.log(quotedAmountOut);
-  return 24242;
 
   return toReadableAmount(quotedAmountOut, 18);
 }
